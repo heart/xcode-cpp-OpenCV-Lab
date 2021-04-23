@@ -8,6 +8,13 @@
 #ifndef VideoFileCapture_hpp
 #define VideoFileCapture_hpp
 
-#include <stdio.h>
+#include "ChapterBase.hpp"
 
+class VideoFileCapture: public ChapterBase {
+public:
+    void init();
+    void loop();
+    VideoCapture cap;
+    Mat img;
+};
 #endif /* VideoFileCapture_hpp */

@@ -1,5 +1,5 @@
 //
-//  Tester.hpp
+//  ChapterBase.hpp
 //  MyOpenCV
 //
 //  Created by narongrit kanhanoi on 23/4/2564 BE.
@@ -20,10 +20,11 @@ using namespace cv;
 class ChapterBase{
 public:
     bool isExit = false;
+    int delay = 20;
     virtual void init() = 0;
     virtual void loop() = 0;
     void checkKeyToExit(){
-        int key = waitKey(20);
+        int key = waitKey(delay);
         if(key == 27){//Press ESC to exit
             isExit = true;
         }

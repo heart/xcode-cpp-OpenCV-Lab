@@ -8,6 +8,12 @@
 #ifndef Chapter2_hpp
 #define Chapter2_hpp
 
-#include <stdio.h>
+#include "ChapterBase.hpp"
+
+class Chapter2: public ChapterBase{
+public:
+    void init();
+    void loop();
+};
 
 #endif /* Chapter2_hpp */

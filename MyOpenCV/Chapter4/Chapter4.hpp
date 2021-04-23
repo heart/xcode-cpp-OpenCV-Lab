@@ -8,6 +8,12 @@
 #ifndef Chapter4_hpp
 #define Chapter4_hpp
 
-#include <stdio.h>
+#include "ChapterBase.hpp"
 
+class Chapter4: public ChapterBase{
+    Mat img;
+public:
+    void init();
+    void loop();
+};
 #endif /* Chapter4_hpp */

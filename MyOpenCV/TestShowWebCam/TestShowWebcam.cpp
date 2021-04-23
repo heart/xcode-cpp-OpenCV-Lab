@@ -6,3 +6,16 @@
 //
 
 #include "TestShowWebcam.hpp"
+
+using namespace cv;
+using namespace std;
+
+
+void TestShowWebcam::init(){
+    cap.open(0);
+}
+
+void TestShowWebcam::loop(){
+    cap.read(img);
+    imshow("Image", img);
+}

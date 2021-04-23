@@ -7,7 +7,11 @@
 
 #ifndef Chapter1_hpp
 #define Chapter1_hpp
+#include "ChapterBase.hpp"
 
-#include <stdio.h>
-
+class Chapter1: public ChapterBase{
+public:
+    void init();
+    void loop();
+};
 #endif /* Chapter1_hpp */

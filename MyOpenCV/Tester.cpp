@@ -6,3 +6,8 @@
 //
 
 #include "Tester.hpp"
+#include <stdio.h>
+
+void Tester::run() {
+    printf("Tester RUN.\n");
+}

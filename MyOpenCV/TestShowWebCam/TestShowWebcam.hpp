@@ -8,6 +8,13 @@
 #ifndef TestShowWebcam_hpp
 #define TestShowWebcam_hpp
 
-#include <stdio.h>
+#include "ChapterBase.hpp"
 
+class TestShowWebcam: public ChapterBase{
+    VideoCapture cap;
+    Mat img;
+public:
+    void init();
+    void loop();
+};
 #endif /* TestShowWebcam_hpp */

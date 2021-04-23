@@ -8,6 +8,12 @@
 #ifndef TestShowImage_hpp
 #define TestShowImage_hpp
 
-#include <stdio.h>
+#include "ChapterBase.hpp"
+
+class TestShowImage: public ChapterBase{
+public:
+    void init();
+    void loop();
+};
 
 #endif /* TestShowImage_hpp */
