@@ -11,30 +11,34 @@
 #include "Chapter4.hpp"
 #include "Chapter5.hpp"
 #include "Chapter6.hpp"
+#include "Chapter7.hpp"
 
-#define RUN 6
+
+#define CHAPTER 7
 
 int main() {
     ChapterBase *app;
     
-    if(RUN == -1){
+    if(CHAPTER == -1){
         app = new TestShowImage();
-    }else if(RUN == -2){
+    }else if(CHAPTER == -2){
         app = new TestShowWebcam();
-    }else if(RUN == 1){
+    }else if(CHAPTER == 1){
         app = new Chapter1();
-    }else if(RUN == 1.1){
+    }else if(CHAPTER == 1.1){
         app = new VideoFileCapture();
-    }else if(RUN == 2){
+    }else if(CHAPTER == 2){
         app = new Chapter2();
-    }else if(RUN == 3){
+    }else if(CHAPTER == 3){
         app = new Chapter3();
-    }else if(RUN == 4){
+    }else if(CHAPTER == 4){
         app = new Chapter4();
-    }else if(RUN == 5){
+    }else if(CHAPTER == 5){
         app = new Chapter5();
-    }else if(RUN == 6){
+    }else if(CHAPTER == 6){
         app = new Chapter6();
+    }else if(CHAPTER == 7){
+        app = new Chapter7();
     }
     
     app->init();

@@ -24,16 +24,16 @@ void Chapter6::init(){
     namedWindow("Trackbars", WINDOW_NORMAL);
     resizeWindow("Trackbars", 640,200);
     
-    createTrackbar("Hue Min", "Trackbars", &hmin, 255);
+    createTrackbar("Hue Min", "Trackbars", &hmin, 179);
     createTrackbar("Sat Min", "Trackbars", &smin, 255);
     createTrackbar("Val Min", "Trackbars", &vmin, 255);
     
-    createTrackbar("Hue Max", "Trackbars", &hmax, 255);
+    createTrackbar("Hue Max", "Trackbars", &hmax, 179);
     createTrackbar("Sat Max", "Trackbars", &smax, 255);
     createTrackbar("Val Max", "Trackbars", &vmax, 255);
     
-    //imshow("Image", img);
-    //imshow("imgHSV", imgHSV);
+    imshow("Image", img);
+    imshow("imgHSV", imgHSV);
 }
 
 void Chapter6::loop(){
