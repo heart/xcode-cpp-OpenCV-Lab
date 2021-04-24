@@ -7,16 +7,11 @@
 
 #include "Chapter6.hpp"
 
-
-Mat imgHSV;
-Mat mask;
-Mat img;
-
-int hmin = 0, smin = 110, vmin = 153;
-int hmax = 19, smax = 240, vmax = 255;
-
 void Chapter6::init(){
-    delay = 1;
+    
+    //call the loop function every 1 millisec if possible
+    setLoopInterval(1);
+    
     string path = "Resources/lambo.png";
     img = imread(path);
     cvtColor(img, imgHSV, COLOR_BGR2HSV);

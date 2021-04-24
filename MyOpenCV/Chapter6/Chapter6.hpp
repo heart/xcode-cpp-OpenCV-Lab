@@ -11,6 +11,12 @@
 #include "ChapterBase.hpp"
 
 class Chapter6: public ChapterBase{
+    Mat imgHSV;
+    Mat mask;
+    Mat img;
+
+    int hmin = 0, smin = 110, vmin = 153;
+    int hmax = 19, smax = 240, vmax = 255;
 public:
     void init();
     void loop();

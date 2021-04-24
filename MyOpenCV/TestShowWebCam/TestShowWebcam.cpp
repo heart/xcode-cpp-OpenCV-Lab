@@ -7,10 +7,6 @@
 
 #include "TestShowWebcam.hpp"
 
-using namespace cv;
-using namespace std;
-
-
 void TestShowWebcam::init(){
     cap.open(0);
 }

@@ -12,9 +12,10 @@
 #include "Chapter5.hpp"
 #include "Chapter6.hpp"
 #include "Chapter7.hpp"
+#include "Chapter8.hpp"
 
 
-#define CHAPTER 7
+#define CHAPTER 8
 
 int main() {
     ChapterBase *app;
@@ -39,6 +40,8 @@ int main() {
         app = new Chapter6();
     }else if(CHAPTER == 7){
         app = new Chapter7();
+    }else if(CHAPTER == 8){
+        app = new Chapter8();
     }
     
     app->init();

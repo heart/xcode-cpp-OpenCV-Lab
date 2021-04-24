@@ -26,8 +26,14 @@ public:
     void checkKeyToExit(){
         int key = waitKey(delay);
         if(key == 27){//Press ESC to exit
-            isExit = true;
+            exitApp();
         }
+    }
+    void exitApp(){
+        isExit = true;
+    }
+    void setLoopInterval(int interval){
+        delay = interval;
     }
 };
 #endif /* Tester_hpp */

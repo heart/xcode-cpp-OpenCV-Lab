@@ -11,9 +11,6 @@
 #include <opencv2/imgproc.hpp>
 #include <iostream>
 
-using namespace cv;
-using namespace std;
-
 void TestShowImage::init(){
     cout << "TestShowImage RUN" << endl;
     string path = "Resources/test.png";

@@ -7,9 +7,6 @@
 
 #include "Chapter1.hpp"
 
-using namespace std;
-using namespace cv;
-
 void Chapter1::init(){
     string path = "Resources/test.png";
     Mat img = imread(path);
